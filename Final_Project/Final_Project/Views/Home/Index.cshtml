@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form asp-controller="Home" asp-action="TestAPIs">
+        <p>
+           Search: <input type="text" name="SearchString" placeholder="Enter keywords here!" />
+            <input type="submit" value="Filter" />
+        </p>
+    </form>
+</div>

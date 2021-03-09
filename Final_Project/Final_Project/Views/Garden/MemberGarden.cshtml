@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Final_Project.Models.ViewModels.GardenControllerViewModels.MemberGardenViewModel
+
+@foreach(var plant in Model.garden)
+{
+<ol>
+    <li>@plant.common_name</li>
+    <li>@plant.scientific_name</li>
+    <li>@plant.plantDate</li>
+    <li>@plant.harvestDate</li>
+</ol>
+<img src="@plant.image_url" />
+}
