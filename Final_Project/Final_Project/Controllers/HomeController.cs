@@ -1,5 +1,6 @@
 ﻿using Final_Project.Models;
 using Final_Project.Models.ViewModels;
+using Final_Project.Models.ViewModels.HomeControllerViewModels;
 using Final_Project.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -32,10 +33,17 @@ namespace Final_Project.Controllers
             _tropicalFruitClient = tropicalFruitClient;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            var SearchString = "Rosa pendulina";
 
-            return View();
+            var viewModel = new IndexViewModel();
+            var response = await _trefleClient.GetPlants(SearchString);
+            viewModel.Plants = response.data
+                .Select(response => new PlantVM() { Name = response.common_name, ScientificName = response.scientific_name, ImageURL = response.image_url, PlantID = response.id })
+                .ToList();
+
+            return View(viewModel);
         }
 
         public IActionResult About()

@@ -1,12 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Grow Me Garden!";
 }
 
+@model Final_Project.Models.ViewModels.HomeControllerViewModels.IndexViewModel
+
 <div class="text-center">
-    <form asp-controller="Home" asp-action="TestAPIs">
+    <form asp-controller="Garden" asp-action="SearchResult" method="post">
         <p>
-           Search: <input type="text" name="SearchString" placeholder="Enter keywords here!" />
-            <input type="submit" value="Filter" />
+            Plant Search: <input type="text" name="search" /><input type="submit" value="Go!" />
         </p>
     </form>
+    <ul>
+        @foreach (var Plant in @Model.Plants)
+        {
+            <li>
+                <h1>@Plant.Name - @Plant.ScientificName</h1>
+                <img src="@Plant.ImageURL" />
+            </li>
+        }
+    </ul>
 </div>
+<a class="nav-link text-dark" asp-area="" asp-controller="Garden" asp-action="MemberPortal">MemberPortal</a>

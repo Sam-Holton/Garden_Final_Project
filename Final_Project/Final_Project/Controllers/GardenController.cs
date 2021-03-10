@@ -256,17 +256,9 @@ namespace Final_Project.Controllers
             return View(viewModel);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
+        public IActionResult MemberPortal()
+        {
+            return View();
+        }
     }
 }

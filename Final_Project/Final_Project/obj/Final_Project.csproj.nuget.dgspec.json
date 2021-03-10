@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\broly\\Documents\\School\\Grand Circus\\FinalProject\\Final_Project\\Final_Project\\Final_Project.csproj": {}
+    "C:\\Users\\bzztt\\source\\repos\\Garden_Final_Project\\Final_Project\\Final_Project\\Final_Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\broly\\Documents\\School\\Grand Circus\\FinalProject\\Final_Project\\Final_Project\\Final_Project.csproj": {
+    "C:\\Users\\bzztt\\source\\repos\\Garden_Final_Project\\Final_Project\\Final_Project\\Final_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\broly\\Documents\\School\\Grand Circus\\FinalProject\\Final_Project\\Final_Project\\Final_Project.csproj",
+        "projectUniqueName": "C:\\Users\\bzztt\\source\\repos\\Garden_Final_Project\\Final_Project\\Final_Project\\Final_Project.csproj",
         "projectName": "Final_Project",
-        "projectPath": "C:\\Users\\broly\\Documents\\School\\Grand Circus\\FinalProject\\Final_Project\\Final_Project\\Final_Project.csproj",
-        "packagesPath": "C:\\Users\\broly\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\broly\\Documents\\School\\Grand Circus\\FinalProject\\Final_Project\\Final_Project\\obj\\",
+        "projectPath": "C:\\Users\\bzztt\\source\\repos\\Garden_Final_Project\\Final_Project\\Final_Project\\Final_Project.csproj",
+        "packagesPath": "C:\\Users\\bzztt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bzztt\\source\\repos\\Garden_Final_Project\\Final_Project\\Final_Project\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\broly\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\bzztt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -99,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
